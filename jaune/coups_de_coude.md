@@ -1,4 +1,3 @@
-% Jaune
 # Coups de coude
 - Circulaire visage
 - Circulaire coté opposé

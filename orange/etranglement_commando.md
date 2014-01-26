@@ -1,4 +1,3 @@
-% Orange
 # Défense contre étranglement commando
 
 ## Technique

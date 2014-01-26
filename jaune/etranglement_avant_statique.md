@@ -1,4 +1,3 @@
-% Jaune
 # Étranglement avant statique
 
 ## Technique

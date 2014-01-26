@@ -1,4 +1,4 @@
-MDS=$(wildcard *.md)
+MDS=$(wildcard jaune/*.md orange/*.md)
 PDFS=$(MDS:%.md=pdfs/%.pdf)
 .PRECIOUS: $(MDS:%.md=texs/%.tex)
 all: $(PDFS) 
@@ -7,17 +7,15 @@ all: $(PDFS)
 clean:
 	rm -rf texs pdfs
 
-texs pdfs :
-	mkdir $@
-
-texs/%.tex : %.md templates/mylatex.latex | texs
-	sed 's/^% \(Orange\|Jaune\)/\\cfoot{\1}\n/' $< | \
+texs/%.tex : %.md templates/mylatex.latex
+	mkdir -p ${@D}
 	pandoc -f markdown \
 		-t latex \
 		--data-dir=$(CURDIR) \
 		--template=mylatex \
-		> $@
+		$< -o $@
 
-pdfs/%.pdf : texs/%.tex | pdfs
+pdfs/%.pdf : texs/%.tex
+	mkdir -p ${@D}
 	cd ${<D}; pdflatex ${<F}
-	mv ${<D}/$*.pdf $@
+	mv texs/$*.pdf $@

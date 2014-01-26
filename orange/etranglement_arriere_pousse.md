@@ -1,4 +1,3 @@
-% Orange
 # Étranglement arrière poussé
 
 ## Technique
