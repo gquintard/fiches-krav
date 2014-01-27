@@ -1,4 +1,4 @@
-MDS=$(wildcard jaune/*.md orange/*.md)
+MDS=$(wildcard jaune/*.md orange/*.md verte/*.md)
 PDFS=$(MDS:%.md=pdfs/%.pdf)
 TEXS=$(MDS:%.md=texs/%.tex)
 .PRECIOUS: $(TEXS)
@@ -8,16 +8,20 @@ all: pdfs/big.pdf
 clean:
 	rm -rf texs pdfs
 
-texs/%.tex : %.md templates/mylatex.latex
+texs/%.tex : %.md Makefile
 	mkdir -p ${@D}
+	echo '\\newpage' > $@
+	sed '0,/RE/s/\(# .*\)/\1 {#$(notdir $*)}/' $< | \
 	pandoc -f markdown \
 		-t latex \
-		$< -o $@
+		>> $@
 
 texs/big.tex : templates/pre.tex $(TEXS) templates/post.tex
 	cat $^ > $@
 
 pdfs/%.pdf : texs/%.tex
 	mkdir -p ${@D}
+	cd ${<D}; pdflatex ${<F}
+	cd ${<D}; pdflatex ${<F}
 	cd ${<D}; pdflatex ${<F}
 	mv texs/$*.pdf $@
