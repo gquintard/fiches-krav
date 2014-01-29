@@ -11,7 +11,7 @@ clean:
 texs/%.tex : %.md Makefile
 	mkdir -p ${@D}
 	echo '\\newpage\n\\cfoot{$(subst /,,$(dir $*))}' > $@
-	sed '0,s/\(# .*\)/\1 {#$(notdir $*)}/' $< | \
+	sed '1 s/\(# .*\)/\1 {#$(notdir $*)}/' $< | \
 	pandoc -f markdown \
 		-t latex \
 		>> $@
