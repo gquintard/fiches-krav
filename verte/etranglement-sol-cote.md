@@ -1,7 +1,7 @@
 # Étranglement au sol (adversaire à coté)
 
 ## Technique
-1.  - Crochetage de la main extérieur
+1.  - Crochetage de la main extérieure
     - Pique à la gorge de la main intérieure
 2.  - Saisie de la main crochetée à deux mains
     - Passage du tibia intérieur sous l'aisselle de l'agresseur
