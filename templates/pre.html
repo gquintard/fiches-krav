@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>orange</title>
+  <style type="text/css">
+
+div.hide > *:not(:first-child) {
+    display:none;
+}   
+
+div.show > *:not(:first-child) {
+    display:inline;
+}
+
+#maxi>* {display:none;}
+#maxi.jaune>#entry-jaune{display:inline;}
+#maxi.orange>#entry-orange{display:inline;}
+#maxi.verte>#entry-verte{display:inline;}
+/*.bouton {display:none;}
+.bouton.sommaire {display:inline;}
+.bouton.retour {display:inline;}*/
+
+.jaune {background: yellow;}
+.orange {background: orange;}
+.verte  {background: green;}
+
+
+</style>
+
+<script>
+  function changepage(id) {
+	  document.getElementById("maxi").className = id;
+  }
+  function toggle(id) {
+    if (document.getElementById(id).className == "show") {
+        document.getElementById(id).className = "hide";
+    } else {
+        document.getElementById(id).className = "show";
+    }
+  }
+</script>
+
+</head>
+<body>
+<div id="entry-sommaire">
+	<h1 onclick='changepage("jaune");' 	class="bouton ceinture" >jaune</h1>
+	<h1 onclick='changepage("orange");' 	class="bouton ceinture">orange</h1>
+	<h1 onclick='changepage("verte");' 	class="bouton ceinture">verte</h1>
+	<h1 onclick='changepage("sommaire");' 	class="bouton retour">retour</h1>
+</div>
+<div id="maxi" class="sommaire">
+
+
