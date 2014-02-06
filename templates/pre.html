@@ -24,19 +24,15 @@ div.show > *:not(:first-child) {
 #maxi.orange>#entry-orange{display:block;}
 #maxi.verte>#entry-verte{display:block;}
 
-#entry-sommaire.return>#bouton-retour{display:block;}
-#entry-sommaire.return>#bouton-jaune{display:none;}
-#entry-sommaire.return>#bouton-orange{display:none;}
-#entry-sommaire.return>#bouton-verte{display:none;}
-
-#entry-sommaire.main>#bouton-retour{display:none;}
-#entry-sommaire.main>#bouton-jaune{display:block;}
-#entry-sommaire.main>#bouton-orange{display:block;}
-#entry-sommaire.main>#bouton-verte{display:block;}
+#entry-sommaire{text-align: center}
+#entry-sommaire>*{display:none}
+#entry-sommaire.sommaire>:not(#bouton-retour){display:block;}
+#entry-sommaire:not(.sommaire)>#bouton-retour{display:block;}
 
 .jaune h1, #bouton-jaune  {background: #ff3;}
 .orange h1, #bouton-orange {background: #fc3;}
 .verte h1, #bouton-verte  {background: #3c3;}
+#bouton-retour {background: #ccc;}
 
 h1{
 	display:block;
@@ -50,20 +46,25 @@ h1{
 </style>
 
 <script>
-  function changepage(id) {
-	  document.getElementById("maxi").className = id;
-	  if (id == "sommaire") {
-		  document.getElementById("entry-sommaire").className = "main";
-	  } else {
-		  document.getElementById("entry-sommaire").className = "return";
-	  }
-  }
-  function toggle(id) {
-    if (document.getElementById(id).className == "show") {
-        document.getElementById(id).className = "hide";
-    } else {
-        document.getElementById(id).className = "show";
-    }
+function changepage(id) {
+	/*var current = document.getElementById("maxi").className;
+	if ("sommaire" != current) {
+		var doc = document.getElementById("entry"+current);
+		for (var i = 0; i < doc.childNodes.length; i++) {
+			if (doc.childNodes[i].className == "show") {
+				doc.childNodes[i]className = "hide";
+			}        
+		}
+	}*/
+	document.getElementById("maxi").className = id;
+	document.getElementById("entry-sommaire").className = id;
+}
+function toggle(id) {
+	if (document.getElementById(id).className == "show") {
+		document.getElementById(id).className = "hide";
+	} else {
+		document.getElementById(id).className = "show";
+	}
   }
 </script>
 
