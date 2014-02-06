@@ -18,7 +18,7 @@
 
 ## Attaque
 - Étranglement aérien, i.e. avant-bras sur la trachée
-- Mouvement court, proche du coup pour éviter d'être détecté
+- Mouvement court, proche du cou pour éviter d'être détecté
 
 ## Sécurité
 - Attention à la clef d'épaule

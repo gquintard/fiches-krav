@@ -16,6 +16,6 @@
 - Une fois la main crochetée, il faut tenir le poignet fermement et le plus "haut" possible
 - Pendant l'amenée au sol, ne pas se redresser, sinon l'adversaire risque de s'aggriper les main et empêcher la clef
 - La clef ne peut fonctionner que si le pouce est dirigé vers le haut (ie. le coude est vers le bas)
-- Pour la clef, il faut viser un point d'appui sur le triceps, au rique de perdre en efficacité. Il faut donc rester très proche de son adversaire dès la saisie de son poignet, qui à se replacer en tirant sur le poignet
+- Pour la clef, il faut viser un point d'appui sur le triceps, au rique de perdre en efficacité. Il faut donc rester très proche de son adversaire dès la saisie de son poignet, quitte à se replacer en tirant sur le poignet
 - On peut soulever le bassin pour accentuer la clef
 - Pour calmer l'agresseur pendant la clef: coup de talon ou mollet au visage
