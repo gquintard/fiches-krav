@@ -1,4 +1,4 @@
-MDS=$(wildcard jaune/*.md orange/*.md verte/*.md)
+MDS=$(wildcard jaune/*.md orange/*.md verte/*.md bleue/*.md)
 PDFS=$(MDS:%.md=pdfs/%.pdf)
 TEXS=$(MDS:%.md=texs/%.tex)
 HTMLS=$(MDS:%.md=htmls/%.html)
@@ -37,9 +37,9 @@ htmls/%.html : %.md Makefile
 		$< >> $@
 	echo '</div>' >> $@
 
-$(foreach d, jaune orange verte, \
+$(foreach d, jaune orange verte bleue, \
 	$(eval htmls/$(d).html: $(filter htmls/$(d)/%, $(HTMLS))))
-htmls/jaune.html htmls/orange.html htmls/verte.html: htmls/%.html :
+htmls/jaune.html htmls/orange.html htmls/verte.html htmls/bleue.html: htmls/%.html :
 	echo "<div id='entry-$*'>" > $@;
 	for i in $^; do \
 		cat $$i >> $@; \
@@ -47,5 +47,5 @@ htmls/jaune.html htmls/orange.html htmls/verte.html: htmls/%.html :
 	echo "</div>" >> $@;
 	
 
-htmls/big.html : templates/pre.html htmls/jaune.html htmls/orange.html htmls/verte.html templates/post.html
+htmls/big.html : templates/pre.html htmls/jaune.html htmls/orange.html htmls/verte.html htmls/bleue.html templates/post.html
 	cat $^ > $@
