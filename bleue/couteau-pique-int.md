@@ -1,4 +1,4 @@
-# Parade extérieure déviée contre attaque couteau en piqué
+# Parade intérieure contre attaque couteau en piqué
 
 ## Technique
 0.  - Départ en position neutre ou garde couteau
