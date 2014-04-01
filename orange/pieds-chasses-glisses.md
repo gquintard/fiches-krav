@@ -2,7 +2,7 @@
 
 ##Techniques
 - Chassés et glissés:
-    - direct</li>
+    - direct
     - circulaire (frappe avec tibia et en piqué)
     - latéral
     - circulaire arrière (frappe avec le talon)
