@@ -7,7 +7,7 @@
 3.  - Pression vers le bas pour amener l'adversaire au sol
 
 ## Attaque
-- Le but de l'attaque est immobilisation, voire une amenée au sol
+- Le but de l'attaque est l'immobilisation, voire l'amenée au sol
 - L'agresseur doit passer son épaule intérieure devant, avec volonté de déséquilibrer
 
 ## Précisions

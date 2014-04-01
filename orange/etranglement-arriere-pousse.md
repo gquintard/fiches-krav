@@ -1,7 +1,7 @@
 # Étranglement arrière poussé
 
 ## Technique
-1.  - Reprise ses appuis en avançant un pied et se mettant de profil
+1.  - Reprise des appuis en avançant un pied et se mettant de profil
     - Montée de l'épaule arrière à l'oreille pour avoir un début de clef de poignet
 2.  - Coup de poing marteau dans les flancs de la main arrière
 

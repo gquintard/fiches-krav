@@ -5,7 +5,7 @@ HTMLS=$(MDS:%.md=htmls/%.html)
 .PRECIOUS: $(TEXS)
 #all: $(PDFS) 
 #all: pdfs/big.pdf
-all: htmls/big.html
+all: fiches.html
 .PHONY: clean
 clean:
 	rm -rf texs pdfs htmls
@@ -47,5 +47,5 @@ htmls/jaune.html htmls/orange.html htmls/verte.html htmls/bleue.html: htmls/%.ht
 	echo "</div>" >> $@;
 	
 
-htmls/big.html : templates/pre.html htmls/jaune.html htmls/orange.html htmls/verte.html htmls/bleue.html templates/post.html
+fiches.html : templates/pre.html htmls/jaune.html htmls/orange.html htmls/verte.html htmls/bleue.html templates/post.html
 	cat $^ > $@
