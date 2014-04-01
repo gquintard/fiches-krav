@@ -15,6 +15,7 @@
 - Si en garde, la jambe avant est celle en miroir du couteau
 - Départ de la main avant le corps
 - Glissade du poignet au deltoïde, en visant l'épaule opposée
-- Garder l'épaule basse pour les pistons
 - Pendant le tai sabaki, le pied arrière ne fait pas de pas, il est juste *tiré* par la rotation du corps
+- Garder l'épaule basse pour les pistons
+- Après la première frappe, bien verrouiller le bras armé contre la hanche de l'agresseur (penser au "Y")
 - Rester proche de l'adversaire
