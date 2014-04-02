@@ -1,4 +1,4 @@
-# Défense contre coup de point de coté (attaque bras extérieur)
+# Défense contre coup de poing de coté (attaque bras extérieur)
 
 ## Technique
 
@@ -10,7 +10,7 @@
     - Pivot du corps et des pieds pour être en quasi-position de garde
     - Frappe de l'autre bras au visage, poing vertical, coude vers le sol
 
-# Défense contre coup de point de coté (attaque bras intérieur)
+# Défense contre coup de poing de coté (attaque bras intérieur)
 
 ## Technique
 
