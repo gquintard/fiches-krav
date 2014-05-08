@@ -97,11 +97,20 @@ function changepage(id) {
 	document.getElementById("maxi").className = id;
 	document.getElementById("entry-sommaire").className = id;
 }
+var vmem = null;
 function toggle(id) {
+
 	if (document.getElementById(id).className == "show") {
 		document.getElementById(id).className = "hide";
+		vmem = null;
 	} else {
-		document.getElementById(id).className = "show";
+		if (vmem != null) {
+			vmem.className = "hide";
+		}
+		vmem = document.getElementById(id);
+		vmem.className = "show";
+		location.href = "#";
+		location.href = "#"+id.replace("move-body-","move-head-");
 	}
   }
 function rewritetree() {
