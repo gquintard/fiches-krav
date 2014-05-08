@@ -12,9 +12,7 @@ htmls/%.html : %.md Makefile
 	mkdir -p ${@D}
 	echo "<div id='move-head-$(notdir $*)' onclick=\"toggle('move-body-$(notdir $*)');\"></div>" > $@
 	echo "<div id='move-body-$(notdir $*)' onclick=\"toggle('move-body-$(notdir $*)');\" class='hide'>" >> $@
-	pandoc -f markdown \
-		-t html \
-		$< >> $@
+	python -m markdown $< >> $@
 	echo '</div>' >> $@
 
 $(foreach d, jaune orange verte bleue, \
