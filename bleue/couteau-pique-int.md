@@ -3,7 +3,7 @@
 ## Technique
 0.  - Départ en position neutre ou garde couteau
 1.  - Déviation du bras avant, au niveau du poignet
-    - Léger pas vers l'extérieur avec tai sabaki
+    - Léger pas vers l'intérieur avec tai sabaki
     - Placage de la main arrière sur la poitrine
 2.  - Saisie de l'avant-bras avec le bras arrière
     - Manchette à la gorge/visage du bras avant
