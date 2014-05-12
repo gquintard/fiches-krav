@@ -1,4 +1,4 @@
-MDS=$(wildcard jaune/*.md orange/*.md verte/*.md bleue/*.md)
+MDS=$(sort $(wildcard jaune/*.md orange/*.md verte/*.md bleue/*.md))
 PDFS=$(MDS:%.md=pdfs/%.pdf)
 HTMLS=$(MDS:%.md=htmls/%.html)
 #all: $(PDFS) 
