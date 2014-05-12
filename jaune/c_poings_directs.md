@@ -15,6 +15,9 @@
 ##Précisions:
 - **Engagement**
 - Poing horizontal
+- Poing aligné avec le bras pour ne pas blesser le poignet
+- Coude rentré
+- Si en garde, ne pas la perdre
 - Pour les piques, doigts légèrement pliés
 - En déplacement, le bras part avant le corps
 - Pour les coups au corps, descendre sur ses appuis (ne pas se découvrir)
