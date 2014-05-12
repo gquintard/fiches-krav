@@ -5,7 +5,7 @@
     - Pas diagonal arrière extérieur d'une des jambes
 	- Inclinaison du buste vers l'avant
 2.  - Frappe aux parties du plat de la main intérieure
-    - Saisie et maintient de la main extérieure
+    - Saisie et maintien de la main extérieure
 3.  - Coup de coude au plexus/tête du bras intérieur
 4.  - Pivot vers l'extérieur sur la jambe extérieure
 5.  - Circulaire piqué aux parties
